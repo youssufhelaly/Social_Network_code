@@ -1,8 +1,3 @@
-#Family name: Youssuf Helaly
-#student number: 300355994
-#Course:ITI 1120
-#Assignement Number 4
-#year 2023
 
 import random
 
@@ -198,32 +193,26 @@ def get_uid(network):
     '''(2Dlist)->int
     Keeps on asking for a user ID that exists in the network
     until it succeeds. Then it returns it'''
-    Flag=False
-    Flag2=True
-    while not Flag:
+    while True :
         try:
-            answer=(int(input("Enter an integer for user ID: ")))
-            if answer<0:
-                print("That was not an integer. Please try again.")
+            user_id=(int(input("Enter an integer for user ID: ")))
+            if user_id<0:
+                print("That was not a non-integer. Please try again.")
             else:
+                Found=False
                 for i in range(len(network)):
-                    if answer!=network[i][0]:
-                        Flag2=False
-                    else:
-                        Flag=True
-                        break
-                if Flag2==False:
+                    if user_id==network[i][0]:
+                        return user_id
+                if Found==False:
                     print("That user ID does not exist. Try again.")
         except ValueError:
                 print("That was not an integer. Please try again.")
-    return answer
    
 
 #############################
 #main
 #############################
 
-#NOTHING FOLLOWING THIS LINE CAN BE REMOVED or MODIFIED
 
 file_name=get_file_name()
     

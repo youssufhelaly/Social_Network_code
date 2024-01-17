@@ -1,6 +1,6 @@
-Title: Social Network Friend Recommender - Python Implementation
+**Title: Social Network Friend Recommender** - Python Implementation
 
-Description:
+**Description:**
 This Python program offers a straightforward algorithm for recommending friends in a social network, focusing on common connections. The code includes nine functions that efficiently read social network files, construct an adjacency list, 
 calculate common friends,and suggest potential new connections. The recommendation process identifies the user with the highest number of common friends who is not already connected.
 The provided text files represent various social networks, specifying users and their friendships. The file format includes the number of users and pairs of friends, ensuring a clear representation of the social structure.
